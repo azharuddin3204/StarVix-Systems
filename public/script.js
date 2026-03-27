@@ -5,9 +5,13 @@ const projectsCount = document.getElementById("projectsCount");
 const services = [
   "AI Agents",
   "Web Development",
+  "Mobile Applications",
   "Software Solutions",
   "Cloud & DevOps",
-  "Automation Systems"
+  "Automation Systems",
+  "SaaS Products",
+  "Business Platforms",
+  "Custom Portals"
 ];
 
 let serviceIndex = 0;
@@ -15,13 +19,13 @@ setInterval(() => {
   serviceIndex = (serviceIndex + 1) % services.length;
   rotatingService.animate(
     [
-      { opacity: 0, transform: "translateY(10px)" },
+      { opacity: 0, transform: "translateY(15px)" },
       { opacity: 1, transform: "translateY(0)" }
     ],
-    { duration: 240, easing: "ease-out" }
+    { duration: 300, easing: "ease-out" }
   );
   rotatingService.textContent = services[serviceIndex];
-}, 1800);
+}, 2000);
 
 themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark");

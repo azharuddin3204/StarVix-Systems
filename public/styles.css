@@ -422,7 +422,7 @@ textarea.field { min-height: 140px; resize: vertical; }
     grid-template-columns: repeat(2, minmax(0, 1fr)); 
   }
   .stats-grid,
-  .ready-feature-grid { grid-template-columns: 1fr; }
+  .ready-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { padding-top: 48px; }
   .section { padding: 68px 0; }
   .hero h1 { font-size: 2.5rem; }
